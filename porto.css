@@ -9,7 +9,7 @@
 
 body {
     
-    color: #ededed;
+    color: #000;
 }
 
 .header {
@@ -28,7 +28,7 @@ body {
 .logo {
     position: relative;
     font-size: 25px;
-    color: #ededed;
+    color: #000;
     text-decoration: none;
     font-weight: 600;
 }
@@ -40,16 +40,16 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #4f6371;
+    background: #00abf0;
     animation: showRight 1s ease forwards;
     animation-delay: 4s;
 }
 
-/* NAVBAR STYLE FIX */
+
 .navbar a {
     font-size: 18px;
     color: #ededed;
-    text-decoration: none; /* hilangkan garis bawah */
+    text-decoration: none; 
     font-weight: 500;
     margin-left: 35px;
     transition: 0.3s;
@@ -57,12 +57,11 @@ body {
 }
 
 /* efek hover */
-.navbar a:hover,
-.navbar a.active {
-    color: #4d7be7;
+.navbar a:hover {
+    color: #f3e8ff;
+    background: transparent; /* hilangkan kotak abu */
 }
 
-/* underline animasi (lebih modern, bukan garis bawah biasa) */
 .navbar a::after {
     content: '';
     position: absolute;
@@ -81,15 +80,15 @@ body {
 .home {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* teks di kiri, foto di kanan */
+    justify-content: flex-start; 
     height: 100vh;
     padding: 0 10%;
-    background-color: #081b29;
+    background-color: #2E1A47;
 }
 
 .home-content{
     max-width: 600px;
-    flex: 1; /* teks ambil ruang tersisa */
+    flex: 1; 
 }
 
 .home-content h1{
@@ -100,16 +99,9 @@ body {
 }
 
 .home-content h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
+    background: transparent;
 }
+
 
 .home-content h3{
     position: relative;
@@ -126,7 +118,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #00abf0;
     animation: showRight 1s ease forwards;
     animation-delay: 1.3s;
 }
@@ -144,7 +136,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #f3e8ff;
     animation: showRight 1s ease forwards;
     animation-delay: 1.6s;
 }
@@ -164,7 +156,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #f3e8ff;
     animation: showRight 1s ease forwards;
     animation-delay: 2.5s;
     z-index: 2;
@@ -189,7 +181,7 @@ body {
 }
 
 .home-sci a:hover{
-    color: #081b29;
+    color: #00abf0;
 }
 
 .home-sci a::before{
@@ -205,13 +197,13 @@ body {
 
 }
 
-.home-sci a:hover::before{
-    width: 100%;
+.home-sci a::before {
+    display: none;
 }
 
 .home-img {
-    flex-shrink: 0; /* supaya foto tidak mengecil */
-    margin-left: 200px; /* jarak antara teks dan foto */
+    flex-shrink: 0; 
+    margin-left: 200px; 
 }
 
 .home-img::before{
@@ -221,7 +213,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
-    background: #081b29;
+    background: #f3e8ff;
     animation: showRight 1s ease forwards;
     animation-delay: 2.2s;
     z-index: 2;
@@ -242,28 +234,28 @@ body {
     }
 }
 
-/* SECTION */
+
 .halaman {
     padding: 100px 10%;
     min-height: 100vh;
-    background: #081b29;
+    background: #2E1A47;
 }
 
-/* JUDUL */
+
 .section-content h2 {
     font-size: 40px;
     color: #00abf0;
     margin-bottom: 20px;
 }
 
-/* PARAGRAF */
+
 .section-content p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 10px;
 }
 
-/* GRID */
+
 .service-box,
 .portfolio-box {
     display: flex;
@@ -272,20 +264,20 @@ body {
     flex-wrap: wrap;
 }
 
-/* CARD */
+
 .card {
     flex: 1;
     min-width: 250px;
     padding: 20px;
-    background: #112e42;
+    background: #f3e8ff;
     border-radius: 10px;
     transition: 0.3s;
 }
 
-/* HOVER */
+
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 0 15px #8a96ee;
+    box-shadow: 0 0 15px #00abf0;
 }
 html {
     scroll-behavior: smooth;
